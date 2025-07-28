@@ -726,21 +726,20 @@ body {
   }
 }
 
+
 @media (max-width: 768px) {
-  .contact-header,
+  body {
+    background-color: #d9e5fb !important; /* Consistent light background */
+  }
+  .container-fluid,
   .about-header,
   .education-header,
   .skills-header,
   .interest-header,
   .testimonial-header,
-  .portfolio-header {
-    width: 100% !important;
-    padding: 2rem !important;
-    text-align: center;
-    background-color: #ffffff !important;  /* Light background for readability */
-    color: #000000 !important;              /* Ensure text is dark for contrast */
-  }
-  .header.content,
+  .portfolio-header,
+  .contact-header,
+  .header-content,
   .about-content,
   .education-content,
   .skills-content,
@@ -748,26 +747,16 @@ body {
   .testimonial-content,
   .portfolio-content,
   .contact-content {
-    background-color: #ffffff !important;  /* Same light background */
-    color: #000000 !important;
-    padding: 1.5rem !important;
-  }
-  .container-fluid .row.g-0 {
-    flex-direction: column;
-  }
-  .sub-title,
-  .display-6,
-  .display-5 {
-    text-align: center !important;
+    background-color: #d9e5fb !important; /* Match body */
+    color: #021541 !important;            /* Dark text for readability */
   }
   .custom-left-panel {
-    background-color: #021541 !important;
-    color:white !important;
+    background-color: #021541 !important; /* Keep left panel dark if shown */
+    color: #fff !important;
     padding: 2rem !important;
     text-align: center;
   }
 }
-
 /* === MINIMAL RESPONSIVE ADDITIONS === */
 
 /* Mobile Navigation Fix */
