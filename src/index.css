@@ -164,38 +164,33 @@ body {
     }
 }
 
-@media (max-width: 991px) {
-    .container-fluid {
-        border: none;
-        background-color: #1a155f;
-    }
+  @media (max-width: 991px) {
+  .container-fluid .header-content,
+  .container-fluid .about-header,
+  .container-fluid .education-header,
+  .container-fluid .skills-header,
+  .container-fluid .interest-header,
+  .container-fluid .testimonial-header,
+  .container-fluid .portfolio-header,
+  .container-fluid .contact-header {
+    padding: 27px;
+    background-color: #021541 !important; /* Set left panel dark blue */
+    color: #ffffff !important; /* Ensure white readable text */
+  }
 
-    .container-fluid .header-content,
-    .container-fluid .about-header,
-    .container-fluid .education-header,
-    .container-fluid .skills-header,
-    .container-fluid .interest-header,
-     .container-fluid .testimonial-header
-    .container-fluid .portfolio-header,
-    .container-fluid .contact-header {
-        padding: 27px;
-        background-color: #1a155f;
-    }
-
-    .container-fluid .header-img,
-    .container-fluid .about-content,
-    .container-fluid .education-content,
-    .container-fluid .skills-content,
-    .container-fluid .interest-content,
-    .container-fluid .portfolio-content,
-     .container-fluid .testimonial-content,
-    .container-fluid .contact-content {
-        padding-left: 0;
-        padding-top: 25px;
-        background-color: #1a155f;
-        
-    }
+  .container-fluid .about-content,
+  .container-fluid .education-content,
+  .container-fluid .skills-content,
+  .container-fluid .interest-content,
+  .container-fluid .portfolio-content,
+  .container-fluid .testimonial-content,
+  .container-fluid .contact-content {
+    padding-left: 0;
+    padding-top: 25px;
+    background-color: #d9e5fb !important; /* Keep content area light */
+  }
 }
+
 
 
 /*** Navbar Start ***/
