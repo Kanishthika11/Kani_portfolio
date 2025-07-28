@@ -648,45 +648,46 @@ body {
   color: #16acde;
 }
 @media (max-width: 768px) {
-  .contact-header {
-    text-align: center;
-    padding: 2rem !important;
-  }
-}
-
-/*** footer Start ***/
-@media (max-width: 991px) {
-    .container-fluid .footer-content {
-        padding-left: 0;
-    }
-}
-
-@media (max-width: 768px) {
-  /* Adjust left-side panels to full width */
+  .contact-header,
   .about-header,
   .education-header,
   .skills-header,
   .interest-header,
   .testimonial-header,
-  .portfolio-header,
-  .contact-header {
+  .portfolio-header {
     width: 100% !important;
     padding: 2rem !important;
     text-align: center;
-    background-color: #fff !important; /* change dark bg to light */
-    color: #000 !important; /* readable text */
+    background-color: #ffffff !important;  /* Light background for readability */
+    color: #000000 !important;              /* Ensure text is dark for contrast */
   }
 
-  /* Reset container layout */
+  .about-content,
+  .education-content,
+  .skills-content,
+  .interest-content,
+  .testimonial-content,
+  .portfolio-content,
+  .contact-content {
+    background-color: #ffffff !important;  /* Same light background */
+    color: #000000 !important;
+    padding: 1.5rem !important;
+  }
+
   .container-fluid .row.g-0 {
     flex-direction: column;
   }
 
-  /* Optional: center titles */
   .sub-title,
   .display-6,
   .display-5 {
     text-align: center !important;
   }
-}
 
+  .custom-left-panel {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 2rem !important;
+    text-align: center;
+  }
+}
