@@ -758,42 +758,47 @@ body {
   }
 }
 
-/* Limit dark background only to left side panel on large screens */
-@media (min-width: 992px) {
+@media (max-width: 768px) {
+  .contact-header,
   .about-header,
   .education-header,
   .skills-header,
   .interest-header,
   .testimonial-header,
-  .portfolio-header,
-  .contact-header {
-    background-color: #021541;
-    color: #ffffff;
+  .portfolio-header {
+    width: 100% !important;
+    padding: 2rem !important;
+    text-align: center;
+    background-color: #ffffff !important;  /* Light background for readability */
+    color: #000000 !important;              /* Ensure text is dark for contrast */
   }
-}
 
-/* On small screens, use light background for all panels */
-@media (max-width: 991px) {
-  .about-header,
-  .education-header,
-  .skills-header,
-  .interest-header,
-  .testimonial-header,
-  .portfolio-header,
-  .contact-header {
+  .about-content,
+  .education-content,
+  .skills-content,
+  .interest-content,
+  .testimonial-content,
+  .portfolio-content,
+  .contact-content {
+    background-color: #ffffff !important;  /* Same light background */
+    color: #000000 !important;
+    padding: 1.5rem !important;
+  }
+
+  .container-fluid .row.g-0 {
+    flex-direction: column;
+  }
+
+  .sub-title,
+  .display-6,
+  .display-5 {
+    text-align: center !important;
+  }
+
+  .custom-left-panel {
     background-color: #ffffff !important;
     color: #000000 !important;
     padding: 2rem !important;
     text-align: center;
-  }
-
-  /* Prevent global dark background leaking in mobile */
-  .container-fluid {
-    background-color: #ffffff !important;
-  }
-
-  /* Prevent left panel effect from affecting mobile layout */
-  .container-fluid::before {
-    display: none !important;
   }
 }
