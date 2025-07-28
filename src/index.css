@@ -792,3 +792,60 @@ body {
     text-align: center;
   }
 }
+
+/* === Fix mobile background and layout === **/
+@media (max-width: 991px) {
+.container-fluid {
+border: none;
+background-color: #d9e5fb !important; /* match desktop light background */
+}
+
+.container-fluid .header-content,
+.container-fluid .about-header,
+.container-fluid .education-header,
+.container-fluid .skills-header,
+.container-fluid .interest-header,
+.container-fluid .testimonial-header,
+.container-fluid .portfolio-header,
+.container-fluid .contact-header {
+padding: 27px;
+background-color: #ffffff !important;
+color: #000 !important;
+text-align: center;
+width: 100% !important;
+}
+
+.container-fluid .header-img,
+.container-fluid .about-content,
+.container-fluid .education-content,
+.container-fluid .skills-content,
+.container-fluid .interest-content,
+.container-fluid .portfolio-content,
+.container-fluid .testimonial-content,
+.container-fluid .contact-content {
+padding-left: 0;
+padding-top: 25px;
+background-color: #ffffff !important;
+color: #000 !important;
+}
+
+.custom-left-panel {
+background-color: #021541 !important;
+color: white !important;
+padding: 2rem !important;
+text-align: center;
+width: 100% !important;
+}
+
+.container-fluid .row.g-0 {
+flex-direction: column;
+margin: 0 !important;
+padding: 0 !important;
+}
+
+.sub-title,
+.display-6,
+.display-5 {
+text-align: center !important;
+}
+}
