@@ -760,42 +760,78 @@ body {
 /* === MINIMAL RESPONSIVE ADDITIONS === */
 
 /* Mobile Navigation Fix */
+/* ...existing code... */
+
+/* Responsive navigation and layout for mobile */
 @media (max-width: 768px) {
   .nav-section .navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 70px;
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255,255,255,0.97);
     transform: none;
     right: auto;
-    backdrop-filter: blur(10px);
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+    backdrop-filter: blur(8px);
   }
-  
   .navbar .navbar-nav {
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 16px;
+    gap: 8px;
   }
-  
   .nav-section .navbar .navbar-nav .nav-item {
-    width: 50px;
-    height: 50px;
-    margin: 5px 0;
-    flex-direction: column;
-    font-size: 10px;
+    width: 48px;
+    height: 48px;
+    margin: 6px auto;
+    font-size: 11px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
   .navbar-nav .nav-link span {
     margin-right: 0;
     margin-bottom: 2px;
     border-right: none;
   }
-  
   .container-fluid {
-    margin-left: 70px;
-    width: calc(100% - 70px);
+    margin-left: 60px;
+    width: calc(100vw - 60px);
+    min-width: 0;
+    padding: 0 8px;
   }
+}
+
+/* For very small screens, let content fill the screen and allow nav to scroll horizontally if needed */
+@media (max-width: 480px) {
+  .nav-section .navbar {
+    width: 48px;
+    min-width: 48px;
+    max-width: 48px;
+  }
+  .nav-section .navbar .navbar-nav .nav-item {
+    width: 40px;
+    height: 40px;
+    font-size: 9px;
+  }
+  .container-fluid {
+    margin-left: 48px;
+    width: calc(100vw - 48px);
+    padding: 0 4px;
+  }
+}
+
+/* Make images and videos responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Education Cards Mobile Fix */
@@ -894,3 +930,4 @@ body {
     font-size: 9px;
   }
 }
+
