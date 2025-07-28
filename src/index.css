@@ -1,3 +1,4 @@
+
 /*** Spinner Start ***/
 body {
   font-family: "Jost", sans-serif;
@@ -7,8 +8,8 @@ body {
   color: #040f54; /* This is grey */
   background-color: #d9e5fb;
   overflow-x: hidden;
-}
 
+}
 .custom-left-panel {
   background-color: #021541;
   color: #ffffff;
@@ -34,6 +35,7 @@ body {
   }
 }
 
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -55,6 +57,7 @@ body {
     transition: 0.5s;
     z-index: 99;
 }
+
 
 /*** Button Start ***/
 .btn {
@@ -119,6 +122,7 @@ body {
     background: var(--bs-primary);
 }
 
+
 .pt-6 {
     padding-top: 60px;
 }
@@ -135,11 +139,13 @@ body {
     padding-bottom: 60px;
 }
 
+
 .sub-title {
     font-family: "Edu TAS Beginner";
     font-weight: 700;
     font-size: 22px;
 }
+
 
 .container-fluid {
     position: relative;
@@ -164,30 +170,34 @@ body {
         border: none;
         background-color: #1a155f;
     }
+
     .container-fluid .header-content,
     .container-fluid .about-header,
     .container-fluid .education-header,
     .container-fluid .skills-header,
-    .container-fluid .interest-header, 
-    .container-fluid .testimonial-header,
+    .container-fluid .interest-header,
+     .container-fluid .testimonial-header
     .container-fluid .portfolio-header,
     .container-fluid .contact-header {
         padding: 27px;
         background-color: #1a155f;
     }
+
     .container-fluid .header-img,
     .container-fluid .about-content,
     .container-fluid .education-content,
     .container-fluid .skills-content,
     .container-fluid .interest-content,
-    .container-fluid .portfolio-content, 
-    .container-fluid .testimonial-content,
+    .container-fluid .portfolio-content,
+     .container-fluid .testimonial-content,
     .container-fluid .contact-content {
         padding-left: 0;
         padding-top: 25px;
-        background-color: #1a155f;            
+        background-color: #1a155f;
+        
     }
 }
+
 
 /*** Navbar Start ***/
 .nav-section {
@@ -219,6 +229,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    
 }
 
 .navbar-nav .nav-link span {
@@ -250,8 +261,8 @@ body {
     margin-right: calc(100% + 40px);
     color:  #0bade3;
 }
-
 /*** Navbar End ***/
+
 
 /*** About Start ***/
 .about-content .about-img {
@@ -274,6 +285,7 @@ body {
     top: 0;
 }
 /*** About End ***/
+
 
 /*** Education Start ***/
 .education-content .education-item {
@@ -316,6 +328,8 @@ body {
 }
 /*** Education End ***/
 
+
+
 /*** Skills Start ***/
 .skills-content .skills-item {
     position: relative;
@@ -334,6 +348,7 @@ body {
 }
 /*** Skills End ***/
 
+
 /*** area of interest - service model ***/
 .interest-content .interest-item {
     box-shadow: 0 0 30px rgba(0, 0, 0, .03);
@@ -342,12 +357,14 @@ body {
 
 .interest-content .interest-item:hover i {
     color:  #16acde;
+
 }
 
 .interest-content .interest-item:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, .08);
 }
 /*** area of interest - service model End ***/
+
 
 /*** Portfolio Start ***/
 .portfolio-content .portfolio-item .portfolio-img {
@@ -386,6 +403,7 @@ body {
     transform: rotate(-6deg);
 }
 /*** Portfolio End ***/
+
 
 /*** Testimonial Start ***/
 .testimonial-carousel {
@@ -461,8 +479,8 @@ body {
     width: 70px;
     height: 70px;
     border: 3px solid var(--bs-primary);
-}
 
+}
 .testimonial-inner-img img {
   width: 100%;
   height: 100%;
@@ -470,7 +488,7 @@ body {
   object-position: center;
   border-radius: 0;
 }
-
+    
 .testimonial-inner-img {
     border-radius: 50%; /* Optional: matches circular styling */
     width: 100px;
@@ -488,7 +506,6 @@ body {
     object-position: center;
     border-radius: 0; /* No curves - keep it rectangular */
 }
-
 .carousel-arrow {
   position: absolute;
   top: 50%;
@@ -527,7 +544,6 @@ body {
 .image-dots img.active {
   transform: scale(1.1);
 }
-
 /* Ensure left panel fills full height */
 .testimonial-header {
   min-height: 100%;
@@ -542,7 +558,11 @@ body {
   border-radius: 0 !important;
   padding: 0;
 }
+
+
+
 /*** Testimonial End ***/
+
 
 /***certifications***/
 .flip-card {
@@ -594,7 +614,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .interest-item {
   background: #fff;
   border-radius: 10px;
@@ -628,7 +647,6 @@ body {
 .interest-item:hover h4 {
   color: #16acde;
 }
-
 @media (max-width: 768px) {
   .contact-header {
     text-align: center;
@@ -648,286 +666,9 @@ body {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
   }
+
   .contact-header {
     min-height: auto !important;
     padding: 2rem !important;
   }
 }
-
-/* === Left Panel Background and Text === */
-/* === Footer Fix === */
-.footer {
-  background-color: #021541;
-  color: white;
-  padding: 40px 20px;
-}
-
-@media (max-width: 991px) {
-  .footer-content {
-    padding: 1rem !important;
-    text-align: center;
-  }
-  /* Full width left panels and text alignment on mobile */
-  .about-header,
-  .education-header,
-  .skills-header,
-  .interest-header,
-  .testimonial-header,
-  .portfolio-header,
-  .contact-header {
-    width: 100% !important;
-    padding: 2rem !important;
-    background-color: #021541 !important;
-    color: white !important;
-    text-align: center;
-  }
-  .container-fluid .row.g-0 {
-    flex-direction: column;
-  }
-}
-
-/* === Background shape for large screens === */
-@media (min-width: 992px) {
-  .container-fluid::before {
-    content: "";
-    position: absolute;
-    width: 15%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #021541;
-    z-index: -1;
-  }
-}
-
-/* === Hide unwanted mobile hamburger menu if showing === */
-.navbar-toggler {
-  display: none !important;
-}
-
-/* === Remove top white gaps & make sections tight === */
-.container-fluid > .row.g-0 {
-  margin: 0;
-  padding: 0;
-}
-
-.section {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-/* === Force full width layout on mobile === */
-@media (max-width: 768px) {
-  .container,
-  .row {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-}
-
-
-@media (max-width: 768px) {
-  body {
-    background-color: #d9e5fb !important; /* Consistent light background */
-  }
-  .container-fluid,
-  .about-header,
-  .education-header,
-  .skills-header,
-  .interest-header,
-  .testimonial-header,
-  .portfolio-header,
-  .contact-header,
-  .header-content,
-  .about-content,
-  .education-content,
-  .skills-content,
-  .interest-content,
-  .testimonial-content,
-  .portfolio-content,
-  .contact-content {
-    background-color: #d9e5fb !important; /* Match body */
-    color: #021541 !important;            /* Dark text for readability */
-  }
-  .custom-left-panel {
-    background-color: #021541 !important; /* Keep left panel dark if shown */
-    color: #fff !important;
-    padding: 2rem !important;
-    text-align: center;
-  }
-}
-/* === MINIMAL RESPONSIVE ADDITIONS === */
-
-/* Mobile Navigation Fix */
-/* ...existing code... */
-
-/* Responsive navigation and layout for mobile */
-@media (max-width: 768px) {
-  .nav-section .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 60px;
-    min-width: 60px;
-    max-width: 60px;
-    height: 100vh;
-    background: rgba(255,255,255,0.97);
-    transform: none;
-    right: auto;
-    z-index: 1000;
-    overflow-y: auto;
-    box-shadow: 2px 0 8px rgba(0,0,0,0.04);
-    backdrop-filter: blur(8px);
-  }
-  .navbar .navbar-nav {
-    flex-direction: column;
-    padding-top: 16px;
-    gap: 8px;
-  }
-  .nav-section .navbar .navbar-nav .nav-item {
-    width: 48px;
-    height: 48px;
-    margin: 6px auto;
-    font-size: 11px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .navbar-nav .nav-link span {
-    margin-right: 0;
-    margin-bottom: 2px;
-    border-right: none;
-  }
-  .container-fluid {
-    margin-left: 60px;
-    width: calc(100vw - 60px);
-    min-width: 0;
-    padding: 0 8px;
-  }
-}
-
-/* For very small screens, let content fill the screen and allow nav to scroll horizontally if needed */
-@media (max-width: 480px) {
-  .nav-section .navbar {
-    width: 48px;
-    min-width: 48px;
-    max-width: 48px;
-  }
-  .nav-section .navbar .navbar-nav .nav-item {
-    width: 40px;
-    height: 40px;
-    font-size: 9px;
-  }
-  .container-fluid {
-    margin-left: 48px;
-    width: calc(100vw - 48px);
-    padding: 0 4px;
-  }
-}
-
-/* Make images and videos responsive */
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Education Cards Mobile Fix */
-@media (max-width: 768px) {
-  .education-content .education-item {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-left: 4px solid #021541;
-  }
-  
-  .education-content .education-item::after,
-  .education-content .education-item::before {
-    display: none;
-  }
-}
-
-/* Button Alignment Mobile Fix */
-@media (max-width: 768px) {
-  .btn {
-    display: inline-block;
-    text-align: center;
-    margin: 5px;
-    min-width: 100px;
-  }
-  
-  .d-flex {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* Skills Shape Mobile Fix */
-@media (max-width: 768px) {
-  .skills-content .skills-item {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 15px;
-  }
-  
-  .skills-content .skills-item::after {
-    opacity: 0.8;
-  }
-}
-
-/* General Mobile Responsiveness */
-@media (max-width: 768px) {
-  body {
-    font-size: medium;
-  }
-  
-  .back-to-top {
-    right: 15px;
-    bottom: 15px;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .flip-card {
-    height: 250px;
-  }
-  
-  .testimonial-carousel .testimonial-item {
-    padding: 30px 15px;
-  }
-  
-  .carousel-arrow {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .left-arrow {
-    left: 10px;
-  }
-  
-  .right-arrow {
-    right: 10px;
-  }
-}
-
-/* Viewport Meta Fix */
-@media (max-width: 480px) {
-  .container-fluid {
-    margin-left: 60px;
-    width: calc(100% - 60px);
-  }
-  
-  .nav-section .navbar {
-    width: 60px;
-  }
-  
-  .nav-section .navbar .navbar-nav .nav-item {
-    width: 45px;
-    height: 45px;
-    font-size: 9px;
-  }
-}
-
