@@ -130,7 +130,11 @@ body {
 @media (max-width: 768px) {
   .btn {
     font-size: 14px;
-    padding: 8px 16px;
+    padding: 10px 20px;
+    min-width: 120px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
   }
   
   .btn-square,
@@ -138,8 +142,16 @@ body {
   .btn-md-square,
   .btn-lg-square,
   .btn-xl-square {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+  
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 }
 
@@ -321,53 +333,76 @@ body {
   color: #0bade3;
 }
 
+/* Mobile Navigation - Fixed Side Navigation */
 @media (max-width: 768px) {
   .nav-section .navbar {
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 250px;
+    left: 0;
+    width: 80px;
     height: 100vh;
     background: rgba(255, 255, 255, 0.95);
     transform: none;
-    transition: right 0.3s ease;
-  }
-  
-  .nav-section .navbar.show {
-    right: 0;
+    right: auto;
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
   
   .navbar .navbar-nav {
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 20px;
+    height: 100%;
+    justify-content: flex-start;
   }
   
   .nav-section .navbar .navbar-nav .nav-item {
-    width: 90%;
+    width: 60px;
+    height: 60px;
     margin: 5px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    flex-direction: column;
+    padding: 5px;
+  }
+  
+  .navbar-nav .nav-link span {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    margin-bottom: 2px;
+    border-right: none;
+    font-size: 16px;
   }
   
   .nav-section .navbar .navbar-nav .nav-item:hover {
     margin-right: 0;
-    transform: translateX(-10px);
-  }
-}
-
-.navbar-toggler {
-  display: none !important;
-}
-
-@media (max-width: 768px) {
-  .navbar-toggler {
-    display: block !important;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 100;
+    transform: scale(1.05);
     background: #021541;
-    border: none;
     color: white;
   }
+  
+  .navbar .navbar-nav .nav-link {
+    flex-direction: column;
+    padding: 5px;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  
+  /* Adjust main content to account for side nav */
+  .container-fluid {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+  }
+}
+
+/* Remove hamburger menu completely */
+.navbar-toggler {
+  display: none !important;
 }
 /*** Navbar End ***/
 
@@ -410,6 +445,10 @@ body {
   box-shadow: 0 0 30px rgba(0, 0, 0, .03);
   transition: 0.5s;
   z-index: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
 }
 
 .education-content .education-item:hover {
@@ -443,14 +482,58 @@ body {
   z-index: -1;
 }
 
+/* Mobile Education Styling - Proper Card Layout */
 @media (max-width: 768px) {
   .education-content .education-item {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #021541;
+    position: relative;
   }
   
   .education-content .education-item::after,
   .education-content .education-item::before {
     display: none;
+  }
+  
+  .education-content .education-item h5 {
+    color: #021541;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .education-content .education-item h6 {
+    color: #16acde;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .education-content .education-item p {
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .education-content .education-item .date-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #021541;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .education-content {
+    padding: 15px;
   }
 }
 /*** Education End ***/
@@ -458,6 +541,12 @@ body {
 /*** Skills Start ***/
 .skills-content .skills-item {
   position: relative;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .skills-content .skills-item::after {
@@ -472,10 +561,53 @@ body {
   z-index: -1;
 }
 
+/* Mobile Skills - Ensure shapes are visible */
 @media (max-width: 768px) {
   .skills-content .skills-item {
     margin-bottom: 20px;
     text-align: center;
+    padding: 25px 15px;
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-content .skills-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50% 50% 50% 50% / 28% 28% 72% 72%;
+    background: #f8f9fa;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  
+  .skills-content .skills-item i {
+    font-size: 2.5rem;
+    color: #021541;
+    margin-bottom: 15px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .skills-content .skills-item h4 {
+    color: #021541;
+    font-weight: 700;
+    margin-bottom: 10px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .skills-content .skills-item .percentage {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #16acde;
+    z-index: 2;
+    position: relative;
   }
 }
 /*** Skills End ***/
@@ -864,6 +996,8 @@ body {
   .footer {
     padding: 20px 10px;
     text-align: center;
+    margin-left: 80px;
+    width: calc(100% - 80px);
   }
   
   .footer-content {
@@ -972,7 +1106,7 @@ body {
   .form-control,
   .form-select,
   .form-check-input {
-    font-size: 16px; /* Prevents zoom on iOS */
+    font-size: 16px;
   }
   
   .input-group {
@@ -1058,5 +1192,22 @@ body {
   * {
     max-width: 100%;
     box-sizing: border-box;
+  }
+}
+
+/* === Mobile Content Alignment === */
+@media (max-width: 768px) {
+  .text-center,
+  .text-md-start {
+    text-align: center !important;
+  }
+  
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .justify-content-between {
+    justify-content: center !important;
   }
 }
