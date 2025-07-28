@@ -757,3 +757,22 @@ body {
     padding: 0 !important;
   }
 }
+
+@media (max-width: 991px) {
+  .about-header,
+  .education-header,
+  .skills-header,
+  .interest-header,
+  .testimonial-header,
+  .portfolio-header,
+  .contact-header {
+    background-color: #ffffff !important; /* revert to white on mobile */
+    color: #000000 !important;           /* readable text on light background */
+    text-align: center;
+    padding: 2rem !important;
+  }
+
+  .container-fluid {
+    background-color: #ffffff !important; /* prevent global dark blue background */
+  }
+}
