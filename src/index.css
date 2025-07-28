@@ -659,17 +659,18 @@ body {
   .nav-section .navbar {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 60px;
     height: 100vh;
     background: rgba(255, 255, 255, 0.97);
     transform: none;
-    right: auto;
+    left: auto;
   }
 
   .container-fluid {
-    margin-left: 60px;
+    margin-right: 60px;
     width: calc(100vw - 60px);
+    margin-left: 0;
   }
 
   .container-fluid::before {
