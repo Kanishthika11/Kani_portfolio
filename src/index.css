@@ -166,31 +166,38 @@ body {
 }
 
 @media (max-width: 991px) {
-  .container-fluid .header-content,
-  .container-fluid .about-header,
-  .container-fluid .education-header,
-  .container-fluid .skills-header,
-  .container-fluid .interest-header,
-  .container-fluid .testimonial-header,
-  .container-fluid .portfolio-header,
-  .container-fluid .contact-header {
-    padding: 27px;
-    background-color: #021541 !important; /* Set left panel dark blue */
-    color: #ffffff !important; /* Ensure white readable text */
-  }
+    .container-fluid {
+        border: none;
+        background-color: #1a155f;
+    }
 
-  .container-fluid .about-content,
-  .container-fluid .education-content,
-  .container-fluid .skills-content,
-  .container-fluid .interest-content,
-  .container-fluid .portfolio-content,
-  .container-fluid .testimonial-content,
-  .container-fluid .contact-content {
-    padding-left: 0;
-    padding-top: 25px;
-    background-color: #d9e5fb !important; /* Keep content area light */
-  }
+    .container-fluid .header-content,
+    .container-fluid .about-header,
+    .container-fluid .education-header,
+    .container-fluid .skills-header,
+    .container-fluid .interest-header,
+     .container-fluid .testimonial-header
+    .container-fluid .portfolio-header,
+    .container-fluid .contact-header {
+        padding: 27px;
+        background-color: #1a155f;
+    }
+
+    .container-fluid .header-img,
+    .container-fluid .about-content,
+    .container-fluid .education-content,
+    .container-fluid .skills-content,
+    .container-fluid .interest-content,
+    .container-fluid .portfolio-content,
+     .container-fluid .testimonial-content,
+    .container-fluid .contact-content {
+        padding-left: 0;
+        padding-top: 25px;
+        background-color: #1a155f;
+        
+    }
 }
+
 
 /*** Navbar Start ***/
 .nav-section {
@@ -641,154 +648,27 @@ body {
   color: #16acde;
 }
 @media (max-width: 768px) {
-  .contact-header,
-  .about-header,
-  .education-header,
-  .skills-header,
-  .interest-header,
-  .testimonial-header,
-  .portfolio-header {
-    width: 100% !important;
-    padding: 2rem !important;
+  .contact-header {
     text-align: center;
-    background-color: #ffffff !important;  /* Light background for readability */
-    color: #000000 !important;              /* Ensure text is dark for contrast */
-  }
-
-  .about-content,
-  .education-content,
-  .skills-content,
-  .interest-content,
-  .testimonial-content,
-  .portfolio-content,
-  .contact-content {
-    background-color: #ffffff !important;  /* Same light background */
-    color: #000000 !important;
-    padding: 1.5rem !important;
-  }
-
-  .container-fluid .row.g-0 {
-    flex-direction: column;
-  }
-
-  .sub-title,
-  .display-6,
-  .display-5 {
-    text-align: center !important;
-  }
-
-  .custom-left-panel {
-    background-color: #ffffff !important;
-    color: #000000 !important;
     padding: 2rem !important;
-    text-align: center;
   }
 }
 
-
+/*** footer Start ***/
 @media (max-width: 991px) {
-  /* Hide default nav and extra padding */
-  nav.navbar {
-    display: none !important;
-  }
-
-  .nav-section {
-    display: none !important;
-  }
-
-  header, .header-top {
-    display: none !important;
-  }
-
-  /* Remove white gap if any */
-  .container-fluid .row:first-child {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .navbar-toggler {
-    display: none !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .navbar-toggler {
-    display: none !important;
-  }
-
-  .header-content {
-    background-color: #021541 !important;
-    color: white !important;
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  .skills-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skills-item {
-    width: 80%;
-    padding: 20px;
-    position: relative;
-    margin-bottom: 30px;
-    z-index: 0;
-  }
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
+    .container-fluid .footer-content {
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 768px) {
-  .certifications-left-panel {
-    background-color: #021541 !important;
-    color: white;
-    padding: 20px;
-  }
-}
-
-.footer {
-  background-color: #021541;
-  color: white !important;
-  padding: 30px 15px;
-  text-align: center;
-}
-
-.footer a {
-  color: white !important;
-  opacity: 1 !important;
-}
-
-@media (max-width: 768px) {
-  .footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding-bottom: 50px; /* extra space to avoid overlap with buttons */
+  .pt-6, .pb-6 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
   }
 
-  .footer a {
-    display: inline-block;
-    margin: 5px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .expertise-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .expertise-box {
-    width: 80%;
-    margin-bottom: 20px;
+  .contact-header {
+    min-height: auto !important;
+    padding: 2rem !important;
   }
 }
