@@ -674,16 +674,6 @@ body {
 }
 
 /* === Left Panel Background and Text === */
-.about-header,
-.education-header,
-.skills-header,
-.interest-header,
-.testimonial-header,
-.portfolio-header,
-.contact-header {
-  background-color: #021541;
-  color: white;
-}
 
 /* === Footer Fix === */
 .footer {
@@ -796,8 +786,8 @@ body {
   }
 
   .custom-left-panel {
-    background-color: #ffffff !important;
-    color: #000000 !important;
+    background-color: #021541 !important;
+    color:white !important;
     padding: 2rem !important;
     text-align: center;
   }
