@@ -762,7 +762,7 @@ body {
     background-color: #ffffff !important;  /* Light background for readability */
     color: #000000 !important;              /* Ensure text is dark for contrast */
   }
-
+  .header.content,
   .about-content,
   .education-content,
   .skills-content,
