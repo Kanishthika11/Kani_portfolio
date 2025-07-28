@@ -683,3 +683,7 @@ body {
     text-align: center !important;
   }
 }
+
+.navbar-toggler {
+  display: none !important;
+}
