@@ -706,3 +706,41 @@ body {
     padding-top: 0 !important;
   }
 }
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+
+  .header-content {
+    background-color: #021541 !important;
+    color: white !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-item {
+    width: 80%;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    z-index: 0;
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
