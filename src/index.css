@@ -662,13 +662,31 @@ body {
 }
 
 @media (max-width: 768px) {
-  .pt-6, .pb-6 {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+  /* Adjust left-side panels to full width */
+  .about-header,
+  .education-header,
+  .skills-header,
+  .interest-header,
+  .testimonial-header,
+  .portfolio-header,
+  .contact-header {
+    width: 100% !important;
+    padding: 2rem !important;
+    text-align: center;
+    background-color: #fff !important; /* change dark bg to light */
+    color: #000 !important; /* readable text */
   }
 
-  .contact-header {
-    min-height: auto !important;
-    padding: 2rem !important;
+  /* Reset container layout */
+  .container-fluid .row.g-0 {
+    flex-direction: column;
+  }
+
+  /* Optional: center titles */
+  .sub-title,
+  .display-6,
+  .display-5 {
+    text-align: center !important;
   }
 }
+
