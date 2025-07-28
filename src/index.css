@@ -662,9 +662,38 @@ body {
     right: 0;
     width: 60px;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.97);
+    background: transparent;
     transform: none;
     left: auto;
+    z-index: 1000;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 8px;
+  }
+
+  .nav-section .navbar .navbar-nav .nav-item {
+    width: 48px;
+    height: 48px;
+    margin: 6px auto;
+    font-size: 11px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bs-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-nav .nav-link span {
+    margin-right: 0;
+    margin-bottom: 2px;
+    border-right: none;
+    width: 24px;
+    height: 24px;
   }
 
   .container-fluid {
@@ -679,5 +708,26 @@ body {
 
   body {
     font-size: medium;
+    background-color: #d9e5fb;
+  }
+
+  .container-fluid,
+  .container-fluid .header-content,
+  .container-fluid .about-header,
+  .container-fluid .education-header,
+  .container-fluid .skills-header,
+  .container-fluid .interest-header,
+  .container-fluid .testimonial-header,
+  .container-fluid .portfolio-header,
+  .container-fluid .contact-header,
+  .container-fluid .header-img,
+  .container-fluid .about-content,
+  .container-fluid .education-content,
+  .container-fluid .skills-content,
+  .container-fluid .interest-content,
+  .container-fluid .portfolio-content,
+  .container-fluid .testimonial-content,
+  .container-fluid .contact-content {
+    background-color: #d9e5fb !important;
   }
 }
