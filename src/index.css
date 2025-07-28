@@ -7,6 +7,8 @@ body {
   line-height: 1.7;
   color: #040f54; /* This is grey */
   background-color: #d9e5fb;
+  overflow-x: hidden;
+
 }
 .custom-left-panel {
   background-color: #021541;
@@ -657,4 +659,16 @@ body {
     .container-fluid .footer-content {
         padding-left: 0;
     }
+}
+
+@media (max-width: 768px) {
+  .pt-6, .pb-6 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .contact-header {
+    min-height: auto !important;
+    padding: 2rem !important;
+  }
 }
