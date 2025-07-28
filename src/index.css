@@ -672,3 +672,88 @@ body {
     padding: 2rem !important;
   }
 }
+
+/* === Left Panel Background and Text === */
+.about-header,
+.education-header,
+.skills-header,
+.interest-header,
+.testimonial-header,
+.portfolio-header,
+.contact-header {
+  background-color: #021541;
+  color: white;
+}
+
+/* === Footer Fix === */
+.footer {
+  background-color: #021541;
+  color: white;
+  padding: 40px 20px;
+}
+
+@media (max-width: 991px) {
+  .footer-content {
+    padding: 1rem !important;
+    text-align: center;
+  }
+
+  /* Full width left panels and text alignment on mobile */
+  .about-header,
+  .education-header,
+  .skills-header,
+  .interest-header,
+  .testimonial-header,
+  .portfolio-header,
+  .contact-header {
+    width: 100% !important;
+    padding: 2rem !important;
+    background-color: #021541 !important;
+    color: white !important;
+    text-align: center;
+  }
+
+  .container-fluid .row.g-0 {
+    flex-direction: column;
+  }
+}
+
+/* === Background shape for large screens === */
+@media (min-width: 992px) {
+  .container-fluid::before {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #021541;
+    z-index: -1;
+  }
+}
+
+/* === Hide unwanted mobile hamburger menu if showing === */
+.navbar-toggler {
+  display: none !important;
+}
+
+/* === Remove top white gaps & make sections tight === */
+.container-fluid > .row.g-0 {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* === Force full width layout on mobile === */
+@media (max-width: 768px) {
+  .container,
+  .row {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
