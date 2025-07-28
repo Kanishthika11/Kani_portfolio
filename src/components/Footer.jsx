@@ -10,7 +10,7 @@ const Footer = () => {
               <div className="row g-4 align-items-center">
                 <div className="col-12 text-center">
                   <div className="d-flex justify-content-center flex-column align-items-center">
-                    <h5 className="mb-2 text-white">Your Name</h5>
+                    <h5 className="mb-2 text-white">K Kanishthika</h5>
                     <p className="mb-3 text-white">
                       Aspiring Developer | Data Science Enthusiast | AI Explorer
                     </p>
