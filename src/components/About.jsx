@@ -57,7 +57,7 @@ const About = () => {
                   <div className="col-6 wow fadeInUp" data-wow-delay="0.4s">
                     <a 
                       className="btn btn-primary py-2 px-4" 
-                      href="/files/K Kanishthika-Resume.pdf"
+                      href="/files/Kani-resume.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
